@@ -1,0 +1,65 @@
+$graffit-color:#2F2F2F;
+$dark-grey-color : #565E66;
+$border-color : #D4DBE0;
+$light-grey-color: #F4F7F9;
+
+
+.text-graffit{
+  color: $graffit-color;
+}
+.text-dark-grey{
+  color: $dark-grey-color;
+}
+.text-grey{
+  color: $light-grey-color;
+}
+
+.bg-graffit{
+  background-color: $graffit-color;
+}
+.bg-dark-grey{
+  background-color: $dark-grey-color;
+}
+.bg-graffit{
+  background-color: $light-grey-color;
+}
+
+%fix-xy{
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+%fix-y{
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+%fix-x{
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+
+.fix-xy{
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.fix-y{
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+.fix-x{
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+
+// DESIGN VIEWPORTS
+$min-vw: 360px;
+$max-vw:2400px;

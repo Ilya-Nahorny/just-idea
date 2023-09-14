@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;500&display=swap');
+
+
+
+html,body{
+  font-size: 10px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  @include media-breakpoint-down(lg){
+    font-size: 8px;
+  }
+}
+h1{
+  &.fluid{
+    &.normal{
+      @include fluid-type(1000px, $max-vw, 80px, 140px);
+    }
+    &.veryBig{
+      @include fluid-type(1000px, $max-vw, 180px, 433px);
+    }
+    &.post{
+      @include fluid-type(1000px, $max-vw, 50px, 110px);
+    }
+
+  }
+}
+h2{
+  &.fluid{
+    @include fluid-type(1000px, $max-vw, 45px, 70px);
+  }
+  &.fs-36{
+    @include fluid-type(1000px, $max-vw, 30px, 40px);
+  }
+}
+h3{
+  &.fluid{
+    @include fluid-type(1000px, $max-vw, 80px, 102px);
+    &.big{
+      @include fluid-type(1000px, $max-vw, 140px, 180px);
+    }
+  }
+}
+
+span,strong{
+  font-size: 1em;
+  font-weight: 700;
+}
+p,li,a{
+  margin:  0;
+  &.fluid{
+    &.smaller{
+      @include fluid-type(1000px, $max-vw, 16px, 24px);
+    }
+    &.small{
+      @include fluid-type(1000px, $max-vw, 16px, 32px);
+    }
+    &.normal{
+      @include fluid-type(1000px, $max-vw, 20px, 36px);
+      span{
+        &.bigger{
+          font-size: 1.7em;
+        }
+        &.big{
+          font-size: 1.3em;
+        }
+      }
+    }
+    &.big{
+      @include fluid-type(1000px, $max-vw, 16px, 28px);
+    }
+    &.bigger{
+      @include fluid-type(1000px, $max-vw, 32px, 58px);
+    }
+    &.fs-18{
+      @include fluid-type(1000px, $max-vw, 18px, 18px);
+    }
+    &.fs-16{
+      @include fluid-type(1000px, $max-vw, 16px, 16px);
+    }
+
+  }
+}
