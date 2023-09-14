@@ -45,9 +45,13 @@ function itemTouch(){
     
   })
 }
-document.addEventListener('DOMContentLoaded', arrangeItemsOnCircle);
+document.addEventListener('DOMContentLoaded', ()=>{
+  console.log(AOS);
+  arrangeItemsOnCircle();
+});
 
 window.addEventListener('resize', ()=>{
   arrangeItemsOnCircle();
 });
 itemHover()
+AOS.init();
