@@ -56,26 +56,19 @@ body{
             display: none;
           }
         }
-        &:nth-child(12) p,
-        &:nth-child(13) p,
-        &:nth-child(2) p,
-        &:nth-child(3) p,
-        &:nth-child(4) p {
-          left: 5vw;
+        &.right p {
+          left: 6vw;
         }
-        &:nth-child(6) p,
-        &:nth-child(7) p,
-        &:nth-child(8) p,
-        &:nth-child(9) p,
-        &:nth-child(10) p {
-          right: 5vw;
+        &.left p {
+          right: 6vw;
         }
-        &:nth-child(11) p {
+        &.top p {
           bottom: 5vw;
         }
-        &:nth-child(5) p {
+        &.bottom p {
           top: 5vw;
         }
+
       }
     }
   }
