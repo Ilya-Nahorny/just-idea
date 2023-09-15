@@ -28,7 +28,7 @@ body{
         position: absolute;
         width: 11.15%;
         aspect-ratio: 1/1;
-    
+        cursor: pointer;
         background-color: $light-grey-color;
         border: 2px solid $border-color;
         border-radius: 50%; 
@@ -110,7 +110,7 @@ body{
         @include media-breakpoint-down(sm){
           width: 100%;
         }
-        input.form-control.form-control{
+        input.form-control{
           height: 3.13em;
           color: $dark-grey-color;
           font-size: 1.6em;
@@ -164,17 +164,16 @@ body{
         color: $dark-grey-color;
         width: calc(100% / 3 - .7rem) ;
         height: 3.13em;
-
         box-shadow: none ;
         border: 1px solid #DBDBDB;
         -webkit-appearance: none ;
         -moz-appearance: none ;
         appearance: none ;
-        background-image: url('../../assets/arrow.svg'); /* Замените на свой собственный путь к изображению */
+        background-image: url('../../assets/arrow.svg'); 
         background-repeat: no-repeat;
         background-position: 95% center;
-        background-size: 13px; /* Размер вашей кастомной стрелки */
-        padding-right: 30px; /* Подгоните отступ справа, чтобы разместить вашу стрелку */
+        background-size: 13px;
+        padding-right: 30px;
         @include media-breakpoint-down(sm){
           width: 100%;
         }
